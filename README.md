@@ -1,6 +1,6 @@
 # Random Repositories
 
-This repository is a collection of my old school projects.  
+This repository is a collection of my old projects that was created for fun and entertainment.
 Instead of keeping them in separate repos, I moved them here for better organization and reference.  
 
 ## Purpose
