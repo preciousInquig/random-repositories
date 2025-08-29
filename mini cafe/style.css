@@ -1,0 +1,147 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #1c1c1c;
+  color: #f5f5f5;
+}
+
+/* Header */
+header {
+  background: #2e2e2e;
+  text-align: center;
+  padding: 25px;
+  border-bottom: 3px solid #b58863;
+}
+header h1 {
+  font-size: 2.2rem;
+  margin: 0;
+  color: #e6d3b3;
+}
+header p {
+  margin: 5px 0 0;
+  color: #c9a66b;
+  font-style: italic;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  min-height: 80vh;
+}
+
+/* Sidebars */
+.sidebar {
+  width: 20%;
+  background: #2a2a2a;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.sidebar h2 {
+  color: #c9a66b;
+  margin-bottom: 15px;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 10px 0;
+  padding: 8px;
+  background: #3a3a3a;
+  border-radius: 5px;
+}
+
+/* Main Content */
+main {
+  flex: 1;
+  background: #1c1c1c;
+  padding: 40px;
+  text-align: center;
+}
+.hero {
+  background: url('coffee-bg.jpg') no-repeat center/cover;
+  padding: 80px 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  color: white;
+}
+.hero h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+/* Contact Form */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 5px;
+  background: #3a3a3a;
+  color: white;
+}
+button {
+  width: 100%;
+  padding: 12px;
+  background: #c9a66b;
+  border: none;
+  border-radius: 5px;
+  color: #1c1c1c;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+button:hover {
+  background: #e6d3b3;
+}
+
+/* Footer */
+footer {
+  background: #2e2e2e;
+  text-align: center;
+  padding: 15px;
+  color: #b58863;
+  font-size: 0.9rem;
+}
+
+/* Steam Effect */
+#steam-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+}
+.steam {
+  position: absolute;
+  bottom: 0;
+  width: 15px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  animation: rise 4s linear infinite;
+  filter: blur(6px);
+  opacity: 0.6;
+}
+
+@keyframes rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-50px) scale(1.2);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translateY(-100px) scale(1.5);
+    opacity: 0;
+  }
+}
