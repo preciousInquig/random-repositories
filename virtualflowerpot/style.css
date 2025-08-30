@@ -991,7 +991,8 @@ body {
   transform: scale(0.6) rotateX(60deg);
 }
 .long-g--4 .leaf {
-  -webkit-mask-image: linear-gradient(to top, transparent 50%, #176220 80%) !important;
+    -webkit-mask-image: linear-gradient(to top, transparent 50%, #176220 80%) !important;
+  mask-image: linear-gradient(to top, transparent 50%, #176220 80%) !important;
 }
 .long-g--5 {
   left: 42vmin;
